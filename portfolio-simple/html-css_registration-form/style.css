@@ -1,0 +1,132 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #1aa9d4;
+}
+
+.decor {
+    position: relative;
+    max-width: 400px;
+    margin: 50px auto 0;
+    background: white;
+    border-radius: 30px;
+}
+
+.form-left-decoration, 
+.form-right-decoration {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: #1aa9d4;
+    border-radius: 20px;
+}
+
+.form-left-decoration
+{
+    bottom: 60px;
+    left: -30px;
+}
+
+.form-left-decoration:before, 
+ .form-left-decoration:after, 
+ .form-right-decoration:before, 
+ .form-right-decoration:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    border-radius: 30px;
+    background: white;
+ }
+ .form-left-decoration:before {
+    top: -20px;
+ }
+ .form-left-decoration:after {
+    top: 20px;
+    left: 10px;
+ }
+ .form-right-decoration:before {
+    top: -20px;
+    right: 0;
+ }
+ .form-right-decoration:after {
+    top: 20px;
+    right: 10px;
+ }
+
+.form-right-decoration
+{
+    right: -30px;
+    top: 60px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 80px;
+    left: -55px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+}
+
+.circle:before
+{
+    content: "";
+    position: absolute;
+    top: -245px;
+    left: 480px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+}
+
+.form-inner
+{
+    padding: 50px;
+}
+
+.form-inner input
+{
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background: #E9EFF6;
+    line-height: 40px;
+    border-width: 0;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-inner input[type="submit"] {
+    margin-top: 30px;
+    background: #1aa9d4;
+    border-bottom: 4px solid #168db2;
+    color: white;
+    font-size: 14px;
+ }
+
+ .form-inner input[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+
+.form-inner input[type="submit"]:active {
+    top: 4px; 
+    box-shadow: 0 0 0 #0056b3; 
+    background-color: #087fff;
+  }
+ .form-inner h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #707981;
+ }
+
